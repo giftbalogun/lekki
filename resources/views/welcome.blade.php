@@ -187,9 +187,9 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-8 col-md-pull-1 animate-box">
-                    <img class="img-responsive" src="{{ asset('master/images/stock/teacher1.jpeg') }}" alt="great tutors and flexibility">
-                    <img class="img-responsive" src="{{ asset('master/images/stock/teacher1.jpeg') }}" alt="great tutors and flexibility">
-                    <img class="img-responsive" src="{{ asset('master/images/stock/teacher1.jpeg') }}" alt="great tutors and flexibility">
+                    <img class="img-responsive" src="{{ asset('master/images/stock/group.jpeg') }}" alt="great tutors and flexibility">
+                    <img class="img-responsive" src="{{ asset('master/images/stock/equip.jpeg') }}" alt="great tutors and flexibility">
+                    <img class="img-responsive" src="{{ asset('master/images/stock/train.jpeg') }}" alt="great tutors and flexibility">
                 </div>
                 <div class="col-md-4 animate-box">
                     <div class="mt">
@@ -230,25 +230,25 @@
     <div class="container-fluid proj-bottom">
         <div class="row">
             <div id="lva-nap" class="col-lg-6 col-md-6 col-sm-6 fh5co-project animate-box" data-animate-effect="fadeIn">
-                <a class="page-scroll" href="#lva-nap"><img src="{{ asset('master/images/stock/board.jpeg') }}" alt="Nusery and primary" class="img-responsive">
+                <a class="page-scroll" href="#lva-nap"><img src="{{ asset('master/images/stock/2.jpeg') }}" alt="Nusery and primary" class="img-responsive">
                     <h3>Nusery and primary</h3>
                     <span>View Course</span>
                 </a>
             </div>
             <div id="lva-shp" class="col-lg-6 col-md-6 col-sm-6 fh5co-project animate-box" data-animate-effect="fadeIn">
-                <a class="page-scroll" href="#lva-shp"><img src="{{ asset('master/images/stock/board.jpeg') }}" alt="Secondary , High School & Post-Secondary" class="img-responsive">
+                <a class="page-scroll" href="#lva-shp"><img src="{{ asset('master/images/stock/3.jpeg') }}" alt="Secondary , High School & Post-Secondary" class="img-responsive">
                     <h3>Secondary , High School & Post-Secondary</h3>
                     <span>View Course</span>
                 </a>
             </div>
             <div id="lva-fe" class="col-lg-6 col-md-6 col-sm-6 fh5co-project animate-box" data-animate-effect="fadeIn">
-                <a class="page-scroll" href="#lva-fe"><img src="{{ asset('master/images/stock/board.jpeg') }}" alt="Foreign Exams" class="img-responsive">
+                <a class="page-scroll" href="#lva-fe"><img src="{{ asset('master/images/stock/for.jpeg') }}" alt="Foreign Exams" class="img-responsive">
                     <h3>Foreign Exams</h3>
                     <span>View Course</span>
                 </a>
             </div>
             <div id="lva-eglw" class="col-lg-6 col-md-6 col-sm-6 fh5co-project animate-box" data-animate-effect="fadeIn">
-                <a class="page-scroll" href="#lva-eglw"><img src="{{ asset('master/images/stock/board.jpeg') }}" alt="English Grammar, Literature, and Writing" class="img-responsive">
+                <a class="page-scroll" href="#lva-eglw"><img src="{{ asset('master/images/stock/english.jpeg') }}" alt="English Grammar, Literature, and Writing" class="img-responsive">
                     <h3>English Grammar, Literature, and Writing</h3>
                     <span>View Course</span>
                 </a>
