@@ -285,7 +285,7 @@
                     <h3>Contact Information</h3>
                     <ul>
                         <li class="address">Lekki, <br> Lagos, Nigeria</li>
-                        <li class="phone"><a href="tel://1234567920">+2348063127827, +2348181627799</a></li>
+                        <li class="phone"><a href="tel://1234567920">+2348063127827, +2348055488397</a></li>
                         <li class="email"><a href="mailto:info@yoursite.com">info@lekkivilleacademy.com</a></li>
                     </ul>
                 </div>
