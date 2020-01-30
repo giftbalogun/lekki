@@ -37,7 +37,7 @@
     <div class="wrapper">
 
       <header class="main-header">
-        <a href="{{ route('admin.dashboard') }}" class="logo"><b>LVA </b>Admin</a>
+        <a href="{{ route('admin.dashboard') }}" class="logo"><b>LVA </b>Tutor</a>
         <!-- Header Navbar: style can be found in header.less -->
         <nav class="navbar navbar-static-top" role="navigation">
           <!-- Sidebar toggle button-->
@@ -138,7 +138,7 @@
                 <ul class="dropdown-menu">
                   <!-- User image -->
                   <li class="user-header">
-                    <img src="{{ asset('admin/img/user2-160x160.jpg') }}" class="img-circle" alt="User Image" />
+                    <img src="{{ asset(Auth::user()->getImage()) }}" class="img-circle" alt="User Image" />
                     <p>
                       {{ Auth::user()->name }}
                       <small>Joined {{ Auth::user()->created_at->diffForHumans() }}</small>
@@ -207,6 +207,9 @@
           <ul class="sidebar-menu">
             <li class="header">MAIN NAVIGATION</li>
 
+            @if(!Auth::check())
+            @else
+            @if(Auth::user()->hasRole('admin'))
             <li class="@yield('active-dashboard')">
               <a href="{{ route('admin.dashboard')}}">
                 <i class="fa fa-dashboard"></i> <span>Dashboard</span></i>
@@ -230,6 +233,24 @@
                 <i class="fa fa-user"></i> <span>Manage Clients/Tutors</span></i>
               </a>
             </li>
+
+            <li class="@yield('active-users')">
+              <a href="{{ route('admin.profile')}}">
+                <i class="fa fa-user"></i> <span>Admin Profile</span></i>
+              </a>
+            </li>
+
+            @endif
+
+            @if(Auth::user()->hasRole('tutor'))
+            <li class="@yield('active-dashboard')">
+              <a href="{{ route('tutor.profile')}}">
+                <i class="fa fa-dashboard"></i> <span>Dashboard</span></i>
+              </a>
+            </li>
+
+            @endif
+            @endif
           </ul>
         </section>
         <!-- /.sidebar -->

@@ -11,30 +11,25 @@ use App\Package;
 use Illuminate\Support\Facades\Input;
 use Illuminate\Support\Facades\Validator;
 
-class AdministratorController extends Controller
+class TutorDController extends Controller
 {
     //
     public function __construct()
     {
-        $this->middleware('role:admin');
+        $this->middleware('role:tutor');
     }
     public function showDashboard(Request $request)
     {
-        return view('admin.dashboard');
-    }
-
-    public function showProfile(Request $request)
-    {
-        return view('admin.profile');
+        return view('tutor.profile');
     }
 
     public function showManageTutors(Request $request)
     {
-        return view('admin.tutors');
+        return view('tutor.tutors');
     }
     public function showManageUsers(Request $request)
     {
-        return view('admin.users');
+        return view('tutor.users');
     }
     public function accept()
     {

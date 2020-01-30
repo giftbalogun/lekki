@@ -19,7 +19,7 @@ class CreateTutorApplicationTable extends Migration
             $table->string('email')->unique();
             $table->string('cv');
             $table->string('phone');
-            $table->enum('status',['pending','approved','disapproved'])->default('pending');
+            $table->enum('status', ['pending', 'approved', 'disapproved'])->default('approved');
             $table->timestamps();
         });
     }

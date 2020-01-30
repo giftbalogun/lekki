@@ -28,7 +28,6 @@
 							<th>S/N</th>
 							<th>Name</th>
 							<th>Email</th>
-							<th>Status</th>
                             <th>Phone</th>
                             <th>Address</th>
 						</tr>
@@ -37,7 +36,6 @@
 							<td>${ (index + 1) }</td>
 							<td>${ user.name }</td>
 							<td>${ user.email }</td>
-							<td>${ user.status }</td>
                             <td>${ user.phone }</td>
                             <td>${ user.address }</td>
 						</tr>

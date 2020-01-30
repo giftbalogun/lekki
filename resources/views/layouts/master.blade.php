@@ -96,6 +96,10 @@
 									<li class="btn-cta"><a href="{{ route('admin.dashboard') }}"><span>Admin</span></a></li>
 									@endif
 
+									@if(Auth::user()->hasRole('tutor'))
+									<li class="btn-cta"><a href="{{ route('tutor.profile') }}"><span>Tutor Dashboard</span></a></li>
+									@endif
+
 									<li class="btn-cta"><a href="#"><span>{{ Auth::user()->name }}</span></a></li>
 
 								<li class="btn-cta"><a href="{{ route('logout') }}" onclick="event.preventDefault();

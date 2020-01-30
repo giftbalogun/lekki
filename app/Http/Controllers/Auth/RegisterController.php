@@ -69,7 +69,7 @@ class RegisterController extends Controller
         if ($data->session()->has('register_redirect')) {
             $this->redirectTo = session('register_redirect');
         }
-        $saveData = $data->only(['name','email','password', 'phone', 'address']);
+        $saveData = $data->only(['name', 'email', 'password', 'phone', 'address']);
         $user = new User;
         $user->fill($saveData);
         $user->save();
@@ -85,12 +85,12 @@ class RegisterController extends Controller
     {
         $this->validator($request->all())->validate();
         $user = $this->create($request);
-        $user->assignRole('tutor');
-       // event(new Registered($user = $this->create($request->all())));
+        $user->assignRole('client');
+        //event(new Registered($user = $this->create($request->all())));
 
         $this->guard()->login($user);
 
         return $this->registered($request, $user)
-                        ?: redirect($this->redirectPath());
+            ?: redirect($this->redirectPath());
     }
 }

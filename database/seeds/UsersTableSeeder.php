@@ -29,5 +29,13 @@ class UsersTableSeeder extends Seeder
         ]);
 
         $user2->assignRole('tutor');
+
+        $user3 = App\User::create([
+            'name' => 'Gift Balogun',
+            'email' => 'blgn@gmail.com',
+            'password' => 'secret'
+        ]);
+
+        $user->assignRole('client');
     }
 }

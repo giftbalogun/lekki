@@ -27,7 +27,6 @@ Route::group(['middleware' => 'optimizeHtml'], function () {
     Route::get('client-details/{package?}', 'UserController@showGetClientDetails')->name('client-details.show');
 
 
-
     Route::post('get-state-lgas', 'LocationController@getStateLgas')->name('state.lgas');
 
     Route::post('get-package-price', 'PackageController@getPackagePricing')->name('package.price');
@@ -39,9 +38,16 @@ Route::get('test', 'PackageController@getPackagePricing');
 
 Route::group(['prefix' => 'admin'], function () {
     Route::get('dashboard', 'AdministratorController@showDashboard')->name('admin.dashboard');
+    Route::get('profile', 'AdministratorController@showProfile')->name('admin.profile');
     Route::get('tutors', 'AdministratorController@showManageTutors')->name('admin.tutors.show');
     Route::get('users', 'AdministratorController@showManageUsers')->name('admin.users.show');
     Route::post('tutors/{tutor?}', 'AdministratorController@accept')->name('admin.tutors.accept');
+});
+
+Route::group(['prefix' => 'tutor'], function () {
+    Route::get('profile', 'TutorDController@showDashboard')->name('tutor.profile');
+    Route::get('tutors', 'TutorDController@showManageTutors')->name('tutor.tutors.show');
+    Route::get('users', 'TutorDController@showManageUsers')->name('tutor.users.show');
 });
 
 Auth::routes();
