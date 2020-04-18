@@ -12,8 +12,8 @@ class UsersTableSeeder extends Seeder
     public function run()
     {
         $user = App\User::create([
-            'name' => 'Eniseyin Olajide',
-            'email' => 'eniseyinolajide@gmail.com',
+            'name' => 'LekkiVilleacademy',
+            'email' => 'admin@lekkivilleacademy.com',
             'password' => 'secret'
         ]);
 
@@ -36,6 +36,6 @@ class UsersTableSeeder extends Seeder
             'password' => 'secret'
         ]);
 
-        $user->assignRole('client');
+        $user3->assignRole('client');
     }
 }
