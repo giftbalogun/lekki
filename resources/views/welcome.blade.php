@@ -11,7 +11,7 @@
                 <div class="display-t">
                     <div class="display-tc animate-box" data-animate-effect="fadeIn">
                         <h1>The Art of Teaching is the Art of Assisting Discovery</h1>
-                        <h2> {{ date('Y-m-d H:i:s') }}  </h2>
+                        <h2> {{ date('Y-m-d H:i:s') }} </h2>
                         <p><a class="btn btn-primary btn-lg btn-learn" href="{{ route('select-tutor') }}">Get a Private Tutor</a> <a class="page-scroll btn btn-primary btn-lg btn-video" href="#fh5co-explore"><i class="icon-play"></i> Learn more</a> <a class="btn btn-primary btn-lg btn-learn" href="{{ route('become-tutor') }}"> Become A Tutor</a></p>
                     </div>
                 </div>
@@ -107,45 +107,81 @@
         <div class="row bs-wizard animate-box" style="border-bottom:0;">
 
             <div class="col-xs-2 bs-wizard-step complete">
-                <div class="text-center bs-wizard-stepnum"><h4>Step 1</h4></div>
-                <div class="progress"><div class="progress-bar"></div></div>
+                <div class="text-center bs-wizard-stepnum">
+                    <h4>Step 1</h4>
+                </div>
+                <div class="progress">
+                    <div class="progress-bar"></div>
+                </div>
                 <span class="bs-wizard-dot"></span>
-                <div class="bs-wizard-info text-center"><p>Select Tutor</p></div>
+                <div class="bs-wizard-info text-center">
+                    <p>Select Tutor</p>
+                </div>
             </div>
 
             <div class="col-xs-2 bs-wizard-step complete">
-                <div class="text-center bs-wizard-stepnum"><h4>Step 2</h4></div>
-                <div class="progress"><div class="progress-bar"></div></div>
+                <div class="text-center bs-wizard-stepnum">
+                    <h4>Step 2</h4>
+                </div>
+                <div class="progress">
+                    <div class="progress-bar"></div>
+                </div>
                 <span class="bs-wizard-dot"></span>
-                <div class="bs-wizard-info text-center"><p>Select Lesson Plan</p></div>
+                <div class="bs-wizard-info text-center">
+                    <p>Select Lesson Plan</p>
+                </div>
             </div>
 
             <div class="col-xs-2 bs-wizard-step complete">
-                <div class="text-center bs-wizard-stepnum"><h4>Step 3</h4></div>
-                <div class="progress"><div class="progress-bar"></div></div>
+                <div class="text-center bs-wizard-stepnum">
+                    <h4>Step 3</h4>
+                </div>
+                <div class="progress">
+                    <div class="progress-bar"></div>
+                </div>
                 <span class="bs-wizard-dot"></span>
-                <div class="bs-wizard-info text-center"><p>Fill in Contact Details</p></div>
+                <div class="bs-wizard-info text-center">
+                    <p>Fill in Contact Details</p>
+                </div>
             </div>
 
             <div class="col-xs-2 bs-wizard-step complete">
-                <div class="text-center bs-wizard-stepnum"><h4>Step 4</h4></div>
-                <div class="progress"><div class="progress-bar"></div></div>
+                <div class="text-center bs-wizard-stepnum">
+                    <h4>Step 4</h4>
+                </div>
+                <div class="progress">
+                    <div class="progress-bar"></div>
+                </div>
                 <span class="bs-wizard-dot"></span>
-                <div class="bs-wizard-info text-center"><p>Create Account (optional)</p></div>
+                <div class="bs-wizard-info text-center">
+                    <p>Create Account (optional)</p>
+                </div>
             </div>
 
             <div class="col-xs-2 bs-wizard-step complete">
-                <div class="text-center bs-wizard-stepnum"><h4>Step 5</h4></div>
-                <div class="progress"><div class="progress-bar"></div></div>
+                <div class="text-center bs-wizard-stepnum">
+                    <h4>Step 5</h4>
+                </div>
+                <div class="progress">
+                    <div class="progress-bar"></div>
+                </div>
                 <span class="bs-wizard-dot"></span>
-                <div class="bs-wizard-info text-center"><p>Checkout and Pay</p></div>
+                <div class="bs-wizard-info text-center">
+                    <p>Checkout and Pay</p>
+                </div>
             </div>
 
             <div class="col-xs-2 bs-wizard-step active">
-                <div class="text-center bs-wizard-stepnum"><h4>Step 6</h4></div>
-                <div class="progress"><div class="progress-bar"></div></div>
+                <div class="text-center bs-wizard-stepnum">
+                    <h4>Step 6</h4>
+                </div>
+                <div class="progress">
+                    <div class="progress-bar"></div>
+                </div>
                 <span class="bs-wizard-dot"></span>
-                <div class="bs-wizard-info text-center"><p>Begin Tutorials</p></div>
+                <div class="bs-wizard-info text-center">
+                    <p>Begin Tutorials</p>
+                </div>
             </div>
         </div>
 
@@ -202,13 +238,13 @@
                             <p>We provide schools with the latest educational equipment and gadget for 24 century learning. Our supplies are from the best in the industry, so the durability and genuineness is guaranty, also our prices are the best in the market. We supply and install computers, printers, photocopiers, scanners, projectors, interactive boards for schools. We can also help schools set up their library and computer rooms.</p>
                             <h4><i class="icon-shield"></i>Trainings</h4>
                             <p>At lekkiville academy, we provide cutting edge trainings for schools in the following areas;</p>
-                                <ul class="list-nav">
-                                    <li><i class="icon-check2"></i>Curriculum planning</li>
-                                    <li><i class="icon-check2"></i>24 century teaching and learning skills</li>
-                                    <li><i class="icon-check2"></i>Classroom management</li>
-                                    <li><i class="icon-check2"></i>Educational software usage</li>
-                                    <li><i class="icon-check2"></i>School management and administration etc.</li>
-                                </ul>
+                            <ul class="list-nav">
+                                <li><i class="icon-check2"></i>Curriculum planning</li>
+                                <li><i class="icon-check2"></i>24 century teaching and learning skills</li>
+                                <li><i class="icon-check2"></i>Classroom management</li>
+                                <li><i class="icon-check2"></i>Educational software usage</li>
+                                <li><i class="icon-check2"></i>School management and administration etc.</li>
+                            </ul>
                             <p>Also, let the guy program it in such a way that any teacher that register on the platform must share it either/both facebook or instagram.</p>
                         </div>
                     </div>
@@ -273,7 +309,7 @@
             </div>
 
         </div-->
-    </div>
+</div>
 </div>
 
 <div id="fh5co-contact">
@@ -285,8 +321,10 @@
                     <h3>Contact Information</h3>
                     <ul>
                         <li class="address">Lekki, <br> Lagos, Nigeria</li>
-                        <li class="phone"><a href="tel://1234567920">+2348063127827, +2348055488397</a></li>
-                        <li class="email"><a href="mailto:info@yoursite.com">info@lekkivilleacademy.com</a></li>
+                        <li class="phone"><a href="tel://1234567920">08063127827(Whatapps)
+                                <br>
+                                08063711967(Calls)</a></li>
+                        <li class="email"><a href="mailto:info@yoursite.com">lkv.academy@gmail.com</a></li>
                     </ul>
                 </div>
 

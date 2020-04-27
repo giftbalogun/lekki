@@ -55,7 +55,9 @@
 				<div class="container">
 					<div class="row">
 						<div class="col-xs-12 text-right">
-							<p class="num" style="font-size:18px" >+2348063127827, +2348055488397</p>
+							<p class="num" style="font-size:18px">08063127827(Whatapps)
+								<br>
+								08063711967(Calls)</p>
 							<ul class="fh5co-social">
 								<li><a href="#"><i class="icon-twitter"></i></a></li>
 								<li><a href="#"><i class="icon-facebook"></i></a></li>
@@ -92,20 +94,20 @@
 
 
 								@else
-									@if(Auth::user()->hasRole('admin'))
-									<li class="btn-cta"><a href="{{ route('admin.dashboard') }}"><span>Admin</span></a></li>
-									@endif
+								@if(Auth::user()->hasRole('admin'))
+								<li class="btn-cta"><a href="{{ route('admin.dashboard') }}"><span>Admin</span></a></li>
+								@endif
 
-									@if(Auth::user()->hasRole('tutor'))
-									<li class="btn-cta"><a href="{{ route('tutor.profile') }}"><span>Tutor Dashboard</span></a></li>
-									@endif
+								@if(Auth::user()->hasRole('tutor'))
+								<li class="btn-cta"><a href="{{ route('tutor.profile') }}"><span>Tutor Dashboard</span></a></li>
+								@endif
 
-									<li class="btn-cta"><a href="#"><span>{{ Auth::user()->name }}</span></a></li>
+								<li class="btn-cta"><a href="#"><span>{{ Auth::user()->name }}</span></a></li>
 
 								<li class="btn-cta"><a href="{{ route('logout') }}" onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();"><span>Logout</span></a></li>
 								<form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
-										@csrf
+									@csrf
 								</form>
 								@endif
 							</ul>
@@ -122,7 +124,7 @@
 				<div class="row row-pb-md">
 					<div class="col-lg-5 col-md-4 col-sm-6 col-xs-12 fh5co-widget">
 						<h4>About LVA</h4>
-						<p>LekkiVille Academy(LA) is the leader in qualitative teaching that provides private tuition classes at  our office and on a private level(home & Office Tuition) for students from Nursery through Primary,Secondary,Post-Secondary & University. We also provide classes for exams like JAMB,NECO,GCE and Post-JAMB. We prepare clients for foreign exams: SAT I & II, GRE, GMAT, IELTS, TOEFL and help clients secure admission in foreign Universities.</p>
+						<p>LekkiVille Academy(LA) is the leader in qualitative teaching that provides private tuition classes at our office and on a private level(home & Office Tuition) for students from Nursery through Primary,Secondary,Post-Secondary & University. We also provide classes for exams like JAMB,NECO,GCE and Post-JAMB. We prepare clients for foreign exams: SAT I & II, GRE, GMAT, IELTS, TOEFL and help clients secure admission in foreign Universities.</p>
 					</div>
 
 					<div class="col-md-2 col-sm-4 col-xs-6 col-md-push-1">
@@ -132,23 +134,23 @@
 						</ul>
 					</div>
 
-				<div class="row copyright">
-					<div class="col-md-12 text-center">
-						<p>
-							<small class="block">&copy; {{ \Carbon\Carbon::now()->format('Y') }} Lekki Ville Academy. All Rights Reserved.</small>
-						</p>
-						<p>
-							<ul class="fh5co-social-icons">
-								<li><a href="#"><i class="icon-twitter"></i></a></li>
-								<li><a href="#"><i class="icon-facebook"></i></a></li>
-								<li><a href="#"><i class="icon-linkedin"></i></a></li>
-								<li><a href="#"><i class="icon-instagram"></i></a></li>
-							</ul>
-						</p>
+					<div class="row copyright">
+						<div class="col-md-12 text-center">
+							<p>
+								<small class="block">&copy; {{ \Carbon\Carbon::now()->format('Y') }} Lekki Ville Academy. All Rights Reserved.</small>
+							</p>
+							<p>
+								<ul class="fh5co-social-icons">
+									<li><a href="#"><i class="icon-twitter"></i></a></li>
+									<li><a href="#"><i class="icon-facebook"></i></a></li>
+									<li><a href="#"><i class="icon-linkedin"></i></a></li>
+									<li><a href="#"><i class="icon-instagram"></i></a></li>
+								</ul>
+							</p>
+						</div>
 					</div>
-				</div>
 
-			</div>
+				</div>
 		</footer>
 	</div>
 
@@ -182,7 +184,7 @@
 	<script src="{{ asset('master/js/SmoothScroll.js') }}"></script>
 	<!-- Main -->
 	<script src="{{ asset('master/js/main.js') }}"></script>
-		@stack('page-scripts')
+	@stack('page-scripts')
 </body>
 
 </html>
