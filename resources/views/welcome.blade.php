@@ -245,7 +245,6 @@
                                 <li><i class="icon-check2"></i>Educational software usage</li>
                                 <li><i class="icon-check2"></i>School management and administration etc.</li>
                             </ul>
-                            <p>Also, let the guy program it in such a way that any teacher that register on the platform must share it either/both facebook or instagram.</p>
                         </div>
                     </div>
                 </div>
